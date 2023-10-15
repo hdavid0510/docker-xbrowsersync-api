@@ -1,4 +1,4 @@
-FROM node:14.21-alpine
+FROM node:16-alpine
 
 # Set environment variables
 ENV XBROWSERSYNC_API_VERSION 1.1.13
