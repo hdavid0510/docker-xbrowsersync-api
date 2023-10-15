@@ -3,7 +3,7 @@ pipeline{
 
 	environment {
 		IMAGE_NAME="hdavid0510/xbrowsersync-api"
-		IMAGE_TAG="1.1.13-node14.21-alpine"
+		IMAGE_TAG="1.1.13-node20-alpine"
 		REGISTRY_CREDENTIALS=credentials('dockerhub-credential')
 	}
 
