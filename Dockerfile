@@ -13,8 +13,8 @@ RUN wget -q -O release.tar.gz https://github.com/xBrowserSync/api/archive/v$XBRO
 	&& rm -rf api-$XBROWSERSYNC_API_VERSION/
 
 # Install dependencies
-RUN npm install --only=production \
-	&& npm audit fix \
+RUN npm install --only=production
+RUN npm audit fix \
 	&& npm cache clean --force
 
 # Expose port and start api
