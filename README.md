@@ -1,4 +1,12 @@
 # xBrowserSync
+
+## Docker Container
+
+This fork will only add Dockerfile and Jenkinsfile for automated docker image building.
+No any improvements or additional features will be made here.
+Bumping of some dependencies will be tested, and applied if possible.
+
+
 ## API service
 
 [![Build Status](https://travis-ci.org/xbrowsersync/api.svg)](https://travis-ci.org/xbrowsersync/api) [![Coverage Status](https://coveralls.io/repos/github/xbrowsersync/api/badge.svg?branch=master)](https://coveralls.io/github/xbrowsersync/api?branch=master) ![Dependencies](https://img.shields.io/depfu/xbrowsersync/api) [![Known Vulnerabilities](https://snyk.io/test/github/xbrowsersync/api/badge.svg?targetFile=package.json)](https://snyk.io/test/github/xbrowsersync/api?targetFile=package.json) [![GitHub license](https://img.shields.io/github/license/xbrowsersync/api.svg)](https://github.com/xbrowsersync/api/blob/master/LICENSE.md) [![Liberapay patrons](http://img.shields.io/liberapay/patrons/xbrowsersync.svg?logo=liberapay)](https://liberapay.com/xbrowsersync/donate)
