@@ -24,12 +24,12 @@ pipeline{
 						sh 'docker buildx build --push --platform linux/amd64 -t $IMAGE_NAME:$IMAGE_TAG .'
 					}
 				}
-				stage('Image build armv6') {
-					steps {
-						echo 'Building armv6 image and pushing to DockerHub.'
-						sh 'docker buildx build --push --platform linux/arm/v6 -t $IMAGE_NAME:$IMAGE_TAG .'
-					}
-				}
+				// stage('Image build armv6') {
+				// 	steps {
+				// 		echo 'Building armv6 image and pushing to DockerHub.'
+				// 		sh 'docker buildx build --push --platform linux/arm/v6 -t $IMAGE_NAME:$IMAGE_TAG .'
+				// 	}
+				// }
 				stage('Image build arm64') {
 					steps {
 						echo 'Building arm64 image and pushing to DockerHub.'
