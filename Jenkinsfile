@@ -16,8 +16,8 @@ pipeline{
 				echo "Building ${IMAGE_NAME} on branch ${IMAGE_TAG}"
 			}
 		}
-		stage('Build/Push') {
-			parallel {
+		// stage('Build/Push') {
+		// 	parallel {
 				stage('Image build amd64') {
 					steps {
 						echo 'Building amd64 image and pushing to DockerHub.'
@@ -30,14 +30,14 @@ pipeline{
 				// 		sh 'docker buildx build --push --platform linux/arm/v6 -t $IMAGE_NAME:$IMAGE_TAG .'
 				// 	}
 				// }
-				stage('Image build arm64') {
-					steps {
-						echo 'Building arm64 image and pushing to DockerHub.'
-						sh 'docker buildx build --push --platform linux/arm64/v8 -t $IMAGE_NAME:$IMAGE_TAG .'
-					}
-				}
-			}
-		}
+				// stage('Image build arm64') {
+				// 	steps {
+				// 		echo 'Building arm64 image and pushing to DockerHub.'
+				// 		sh 'docker buildx build --push --platform linux/arm64/v8 -t $IMAGE_NAME:$IMAGE_TAG .'
+				// 	}
+				// }
+		// 	}
+		// }
 	}
 
 	post {
