@@ -4,7 +4,7 @@ WORKDIR /usr/src/api
 COPY . /usr/src/api/
 
 # Install dependencies
-RUN npm install --only=production \
+RUN npm install --only=production  --loglevel verbose \
 	&& npm audit fix \
 	&& npm cache clean --force
 
